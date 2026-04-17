@@ -1,0 +1,15 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<SearchPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+}
+
+<div>
+    @Model.Title
+    @if (Model.BackgroundImage != null)
+    {
+        <img src="@Model.BackgroundImage.Url()">
+        </img>
+    }
+</div>
